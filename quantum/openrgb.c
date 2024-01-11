@@ -123,15 +123,6 @@ static const uint8_t openrgb_rgb_matrix_effects_indexes[] = {
 #ifdef ENABLE_RGB_MATRIX_HUE_WAVE
     28,
 #endif
-// TODO: need openrgb qmk controller to support these 2 new effects
-/*
-#ifdef ENABLE_RGB_MATRIX_PIXEL_RAIN
-    28,
-#endif
-#ifdef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
-    29,
-#endif
- */
 #if defined(RGB_MATRIX_FRAMEBUFFER_EFFECTS) && defined(ENABLE_RGB_MATRIX_TYPING_HEATMAP)
     29,
 #endif
@@ -175,6 +166,12 @@ static const uint8_t openrgb_rgb_matrix_effects_indexes[] = {
 #    ifdef ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
     42,
 #    endif
+#endif
+#ifdef ENABLE_RGB_MATRIX_PIXEL_RAIN
+    43,
+#endif
+#ifdef ENABLE_RGB_MATRIX_PIXEL_FRACTAL
+    44,
 #endif
 };
 static uint8_t raw_hid_buffer[RAW_EPSIZE];
